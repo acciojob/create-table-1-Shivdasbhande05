@@ -11,7 +11,7 @@ function insert_Row() {
 	let new_Cell2 = document.createElement("td");
 
 	//adding text in td element
-	new_Cell1.textContent = "New Cell1Row1 cell1";
+	new_Cell1.textContent = "New Cell1";
 	new_Cell2.textContent = "New Cell2";
 
 	//adding cells in row
@@ -19,5 +19,5 @@ function insert_Row() {
 	new_Row.appendChild(new_Cell2);
 
 	//adding new row at start of the table.
-	existing_Table.prepend(new_Row);
+	existing_Table.insertBefore(new_Row,existing_Table.firstChild);
 }
