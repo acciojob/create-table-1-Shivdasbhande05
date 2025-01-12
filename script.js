@@ -11,8 +11,8 @@ function insert_Row() {
 	let new_Cell2 = document.createElement("td");
 
 	//adding text in td element
-	new_Cell1.innerText = "New Cell1";
-	new_Cell2.innerText = "New Cell2";
+	new_Cell1.textContent = "New Cell1";
+	new_Cell2.textContent = "New Cell2";
 
 	//adding cells in row
 	new_Row.appendChild(new_Cell1);
